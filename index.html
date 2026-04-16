@@ -362,6 +362,7 @@ document.querySelectorAll('.chips').forEach(group => {
 
 function getChip(id){ return [...document.querySelectorAll(`#${id} .chip.selected`)].map(c=>c.dataset.val).join(', '); }
 
+document.getElementById('page-hero').style.display='flex';
 function startJourney(){
   document.getElementById('page-hero').style.display='none';
   document.getElementById('steps-bar').style.display='flex';
