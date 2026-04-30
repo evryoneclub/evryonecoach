@@ -123,15 +123,24 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;heigh
 <div class="page" id="page-2">
   <div class="page-title">TES <span>OBJECTIFS</span></div>
   <p class="page-sub">Qu'est-ce que tu veux accomplir ?</p>
-  <div class="form-group"><label>Objectif principal</label>
+  <div class="form-group"><label>Objectif corps</label>
     <div class="chips" id="chips-objectif">
       <div class="chip" data-val="perte de poids">⚡ Perte de poids</div>
       <div class="chip" data-val="prise de masse">💪 Prise de masse</div>
       <div class="chip" data-val="sèche musculaire">🔪 Sèche musculaire</div>
       <div class="chip" data-val="remise en forme">🎯 Remise en forme</div>
-      <div class="chip" data-val="hybride course et renforcement musculaire">🏃 Hybride</div>
-      <div class="chip" data-val="hyrox training fonctionnel et cardio intense">🔥 Hyrox</div>
-      <div class="chip" data-val="triathlon run vélo natation et renforcement musculaire">🏊 Triathlon</div>
+    </div>
+  </div>
+  <div class="form-group"><label>Discipline sportive <span style="color:var(--muted);font-weight:300;text-transform:none;letter-spacing:0;font-size:11px">(optionnel)</span></label>
+    <div class="chips" id="chips-discipline">
+      <div class="chip" data-val="hybride : course à pied et renforcement musculaire">🏃 Hybride</div>
+      <div class="chip" data-val="hyrox : training fonctionnel et cardio intense">🔥 Hyrox</div>
+      <div class="chip" data-val="triathlon : run, vélo, natation et renforcement">🏊 Triathlon</div>
+      <div class="chip" data-val="boxe : techniques, cardio et renforcement spécifique">🥊 Boxe</div>
+      <div class="chip" data-val="powerlifting : squat, bench press et deadlift">🏋️ Powerlifting</div>
+      <div class="chip" data-val="calisthenics : force au poids de corps et mouvements gymniques">🤸 Calisthenics</div>
+      <div class="chip" data-val="musculation classique : hypertrophie et force">💪 Musculation</div>
+      <div class="chip" data-val="crossfit : wod, mouvements fonctionnels et cardio">🎯 CrossFit</div>
     </div>
   </div>
   <div class="form-group"><label>Équipement</label>
@@ -209,7 +218,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;heigh
   <div class="email-sent">📧 Plan envoyé à <strong id="email-confirm">—</strong></div>
 </div>
 <script>
-let state={prenom:'',email:'',age:'',sexe:'',taille:'',poids:'',niveau:'',objectif:'',equip:'',jours:3,alim:'',extras:'',plan:'pro'};
+let state={prenom:'',email:'',age:'',sexe:'',taille:'',poids:'',niveau:'',objectif:'',discipline:'',equip:'',jours:3,alim:'',extras:'',plan:'pro'};
 document.querySelectorAll('.chips').forEach(group=>{
   group.querySelectorAll('.chip').forEach(chip=>{
     chip.addEventListener('click',()=>{
@@ -251,7 +260,7 @@ async function handlePayment(){
   state.taille=document.getElementById('taille').value;
   state.poids=document.getElementById('poids').value;
   state.niveau=getChip('chips-niveau');
-  state.objectif=getChip('chips-objectif');
+  state.objectif=getChip('chips-objectif');state.discipline=getChip('chips-discipline');
   state.equip=getChip('chips-equip');
   state.jours=document.getElementById('jours').value;
   state.alim=getChip('chips-alim');
