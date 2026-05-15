@@ -5,17 +5,14 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="color-scheme" content="dark">
 <title>EVRYØNE — Le Codex · Guide 30 Jours</title>
+<meta name="description" content="EVRYØNE Le Codex : 100 pages, 4 phases, 7 dimensions. Le protocole complet pour transformer ton corps et ton mental en 30 jours.">
+<link rel="canonical" href="https://coach.evryoneclub.com/">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/favicon.png">
-<link rel="shortcut icon" type="image/png" href="/favicon.png">
-
-<meta name="description" content="EVRYØNE Le Codex : 100 pages, 4 phases, 7 dimensions. Le protocole complet pour transformer ton corps et ton mental en 30 jours. Paiement unique.">
-<link rel="canonical" href="https://coach.evryoneclub.com/">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="EVRYØNE — Le Codex · Guide 30 Jours">
 <meta property="og:description" content="100 pages. 4 phases. 7 dimensions. Le protocole complet en 30 jours.">
-<meta property="og:url" content="https://coach.evryoneclub.com/">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,108 +21,139 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --bg:#0a0a0c;--bg-2:#101014;--ink:#fafafa;--ink-2:#a3a3a8;--ink-3:#6b6b72;
-  --line:rgba(255,255,255,.08);--line-2:rgba(255,255,255,.14);
-  --red:#e11d2e;--red-2:#ff2d3f;--gold:#d4af37;
-  --r:18px;--maxw:1180px;
+  --bg:#0a0a0c;--bg-2:#0f0f12;--ink:#fafafa;--ink-2:#a3a3a8;--ink-3:#6b6b72;--ink-4:#3a3a40;
+  --line:rgba(255,255,255,.06);--line-2:rgba(255,255,255,.12);
+  --red:#e11d2e;--red-2:#ff2d3f;--red-3:#ff6b6b;
+  --maxw:1240px;
 }
 html,body{background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.5;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;background:radial-gradient(1200px 700px at 80% 20%,rgba(225,29,46,.18),transparent 60%),radial-gradient(900px 500px at 10% 70%,rgba(225,29,46,.08),transparent 60%);pointer-events:none;z-index:0}
 a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
-.serif{font-family:'Instrument Serif',serif;font-weight:400;letter-spacing:-.01em}
-.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.serif{font-family:'Instrument Serif',serif;font-weight:400;letter-spacing:-.015em;line-height:.95}
+.italic{font-style:italic}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px;position:relative;z-index:1}
+.grad-red{background:linear-gradient(135deg,#fff 0%,var(--red-2) 50%,var(--red) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
 
 /* NAV */
-.nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(20px);background:rgba(10,10,12,.7);border-bottom:1px solid var(--line)}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:var(--maxw);margin:0 auto}
-.logo{font-weight:900;letter-spacing:.04em;font-size:18px}
-.logo span{color:var(--red-2)}
-.nav-cta{padding:10px 18px;border-radius:9999px;background:var(--ink);color:#0a0a0c;font-weight:700;font-size:14px;transition:transform .2s}
+.nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(24px);background:rgba(10,10,12,.55);border-bottom:1px solid var(--line)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:20px 32px;max-width:var(--maxw);margin:0 auto}
+.brand{font-family:'Instrument Serif',serif;font-size:24px;letter-spacing:.02em;display:flex;align-items:center;gap:10px}
+.brand::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--red-2);box-shadow:0 0 12px var(--red-2)}
+.nav-cta{padding:10px 22px;border-radius:9999px;background:var(--ink);color:#0a0a0c;font-weight:600;font-size:14px;transition:transform .2s}
 .nav-cta:hover{transform:translateY(-1px)}
 
 /* HERO */
-.hero{padding:80px 0 60px;position:relative;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(1000px 500px at 50% -10%,rgba(225,29,46,.18),transparent 60%);pointer-events:none}
-.hero-inner{position:relative;text-align:center;max-width:880px;margin:0 auto}
-.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border:1px solid var(--line-2);border-radius:9999px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);margin-bottom:28px}
-.eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--red-2);box-shadow:0 0 12px var(--red-2)}
-h1{font-size:clamp(44px,7vw,84px);line-height:1.02;letter-spacing:-.03em;font-weight:800;margin-bottom:24px}
-h1 em{font-style:normal;color:var(--red-2)}
-.lede{font-size:clamp(17px,1.6vw,20px);color:var(--ink-2);max-width:620px;margin:0 auto 36px}
-.cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-.btn-buy{display:inline-flex;align-items:center;gap:10px;padding:18px 32px;background:linear-gradient(135deg,var(--red),var(--red-2));color:#fff;font-weight:800;border-radius:9999px;font-size:16px;letter-spacing:.01em;box-shadow:0 14px 40px -10px rgba(225,29,46,.6);transition:transform .2s,box-shadow .2s}
+.hero{padding:80px 0 120px;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.tag{display:inline-flex;align-items:center;gap:10px;padding:10px 18px;border:1px solid var(--line-2);border-radius:9999px;font-size:13px;color:var(--ink-2);margin-bottom:32px;background:rgba(255,255,255,.02)}
+.tag .dot{width:7px;height:7px;border-radius:50%;background:#22c55e;box-shadow:0 0 10px #22c55e}
+h1.hero-title{font-family:'Instrument Serif',serif;font-size:clamp(56px,8vw,118px);line-height:.92;letter-spacing:-.025em;font-weight:400;margin-bottom:36px}
+h1.hero-title .l{display:block}
+.lede{font-size:clamp(16px,1.4vw,18px);color:var(--ink-2);max-width:520px;margin-bottom:40px;line-height:1.6}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.btn-buy{display:inline-flex;align-items:center;gap:10px;padding:18px 32px;background:linear-gradient(135deg,var(--red-2),var(--red));color:#fff;font-weight:600;border-radius:9999px;font-size:15px;box-shadow:0 14px 40px -10px rgba(225,29,46,.55);transition:transform .2s,box-shadow .2s}
 .btn-buy:hover{transform:translateY(-2px);box-shadow:0 20px 50px -10px rgba(225,29,46,.75)}
-.btn-ghost{display:inline-flex;align-items:center;gap:10px;padding:18px 28px;border:1px solid var(--line-2);border-radius:9999px;font-weight:600;color:var(--ink-2);transition:color .2s,border-color .2s}
-.btn-ghost:hover{color:var(--ink);border-color:var(--ink)}
-.hero-meta{margin-top:28px;display:flex;gap:24px;justify-content:center;flex-wrap:wrap;color:var(--ink-3);font-size:13px}
-.hero-meta b{color:var(--ink);font-weight:600}
+.btn-ghost{display:inline-flex;align-items:center;gap:10px;padding:18px 28px;color:var(--ink-2);font-weight:500;font-size:15px;transition:color .2s}
+.btn-ghost:hover{color:var(--ink)}
+.hero-meta{margin-top:32px;display:flex;gap:28px;color:var(--ink-3);font-size:13px;align-items:center}
+.hero-meta .check{color:#22c55e}
 
-/* SECTION BASE */
-section{padding:80px 0;border-top:1px solid var(--line)}
-.section-head{text-align:center;max-width:720px;margin:0 auto 56px}
-.kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-2);margin-bottom:14px;font-weight:700}
-h2{font-size:clamp(34px,5vw,56px);line-height:1.05;letter-spacing:-.02em;font-weight:800;margin-bottom:16px}
-.sub{color:var(--ink-2);font-size:17px}
+/* HERO VISUAL */
+.hero-visual{position:relative;aspect-ratio:3/4;display:flex;align-items:center;justify-content:center}
+.book{position:relative;width:78%;aspect-ratio:3/4;border-radius:8px;background:linear-gradient(135deg,#1a1a1f 0%,#0a0a0c 100%);border:1px solid var(--line-2);box-shadow:0 60px 120px -20px rgba(225,29,46,.35),0 30px 60px -20px rgba(0,0,0,.8),inset 0 1px 0 rgba(255,255,255,.05);transform:perspective(1200px) rotateY(-12deg) rotateX(4deg);overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;padding:48px 36px}
+.book::before{content:"";position:absolute;top:0;bottom:0;left:0;width:14px;background:linear-gradient(90deg,rgba(0,0,0,.6),transparent);border-right:1px solid rgba(255,255,255,.04)}
+.book-top{font-family:'Instrument Serif',serif;font-size:13px;letter-spacing:.3em;color:var(--ink-3);text-transform:uppercase}
+.book-title{font-family:'Instrument Serif',serif;font-size:54px;line-height:.95;letter-spacing:-.02em}
+.book-title em{font-style:italic;background:linear-gradient(135deg,#fff 0%,var(--red-2) 100%);-webkit-background-clip:text;background-clip:text;color:transparent;display:block;margin-top:8px}
+.book-bot{display:flex;justify-content:space-between;align-items:flex-end;font-size:11px;letter-spacing:.18em;color:var(--ink-3);text-transform:uppercase}
+.book-bot b{font-family:'Instrument Serif',serif;font-size:32px;color:var(--ink);letter-spacing:0;display:block;font-weight:400}
 
-/* INCLUDES */
-.dim-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
-.dim{padding:24px;border:1px solid var(--line);border-radius:var(--r);background:var(--bg-2);transition:border-color .2s,transform .2s}
-.dim:hover{border-color:var(--red);transform:translateY(-3px)}
-.dim-num{font-family:'Instrument Serif',serif;font-size:28px;color:var(--red-2);margin-bottom:8px}
-.dim-title{font-weight:700;margin-bottom:6px;font-size:16px}
-.dim-desc{font-size:13px;color:var(--ink-3);line-height:1.5}
+/* SECTIONS */
+section{padding:120px 0;position:relative}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3);margin-bottom:24px;font-weight:500}
+.eyebrow::before{content:"";width:24px;height:1px;background:var(--ink-3)}
+h2{font-family:'Instrument Serif',serif;font-size:clamp(44px,6vw,84px);line-height:1;letter-spacing:-.02em;font-weight:400;margin-bottom:24px;max-width:14ch}
+h2 em{font-style:italic;background:linear-gradient(135deg,#fff 0%,var(--red-2) 60%,var(--red) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--ink-2);font-size:17px;max-width:560px;line-height:1.6}
+
+/* STATS BAR */
+.stats{padding:60px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.stat{text-align:center;padding:24px;border-right:1px solid var(--line)}
+.stat:last-child{border-right:0}
+.stat-num{font-family:'Instrument Serif',serif;font-size:64px;line-height:1;color:var(--ink);margin-bottom:8px}
+.stat-lbl{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3)}
+
+/* MODULES */
+.mods{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:4px;overflow:hidden;margin-top:60px}
+.mod{padding:48px 40px;background:var(--bg);transition:background .3s;position:relative}
+.mod:hover{background:var(--bg-2)}
+.mod-num{font-family:'Instrument Serif',serif;font-size:14px;color:var(--red-2);letter-spacing:.1em;margin-bottom:32px;display:block}
+.mod-title{font-family:'Instrument Serif',serif;font-size:34px;line-height:1.05;margin-bottom:14px;letter-spacing:-.01em}
+.mod-desc{color:var(--ink-2);font-size:15px;line-height:1.6}
 
 /* PHASES */
-.phases{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
-.phase{padding:32px 24px;border:1px solid var(--line);border-radius:var(--r);background:linear-gradient(180deg,var(--bg-2),transparent);position:relative;overflow:hidden}
-.phase::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--red),var(--red-2))}
-.phase-day{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);font-weight:600;margin-bottom:12px}
-.phase-name{font-family:'Instrument Serif',serif;font-size:36px;color:var(--ink);margin-bottom:14px;letter-spacing:-.01em}
-.phase-desc{color:var(--ink-2);font-size:14px;line-height:1.6}
+.phases-wrap{margin-top:60px;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.phase{padding:56px 32px;background:var(--bg);position:relative;overflow:hidden}
+.phase-day{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3);margin-bottom:28px;font-weight:500}
+.phase-num{font-family:'Instrument Serif',serif;font-size:80px;line-height:.9;color:var(--ink-4);margin-bottom:20px}
+.phase-name{font-family:'Instrument Serif',serif;font-size:38px;margin-bottom:14px;background:linear-gradient(135deg,#fff,var(--red-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.phase-desc{font-size:14px;color:var(--ink-2);line-height:1.6}
 
-/* PROOF */
-.proof{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;text-align:center}
-.proof-item{padding:32px 16px;border:1px solid var(--line);border-radius:var(--r);background:var(--bg-2)}
-.proof-num{font-family:'Instrument Serif',serif;font-size:48px;color:var(--red-2);line-height:1;margin-bottom:8px}
-.proof-lbl{font-size:13px;color:var(--ink-2);letter-spacing:.04em}
+/* QUOTE */
+.quote{padding:140px 0;text-align:center;position:relative}
+.quote-text{font-family:'Instrument Serif',serif;font-size:clamp(40px,5.5vw,76px);line-height:1.05;letter-spacing:-.02em;max-width:18ch;margin:0 auto 32px}
+.quote-text em{font-style:italic;background:linear-gradient(135deg,#fff,var(--red-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.quote-by{color:var(--ink-3);font-size:13px;letter-spacing:.2em;text-transform:uppercase}
 
 /* PRICE */
-.price-card{max-width:520px;margin:0 auto;padding:48px 36px;border:1px solid var(--line-2);border-radius:24px;background:linear-gradient(180deg,var(--bg-2),var(--bg));text-align:center;position:relative;overflow:hidden}
-.price-card::before{content:"";position:absolute;inset:0;background:radial-gradient(400px 200px at 50% 0%,rgba(225,29,46,.15),transparent 70%);pointer-events:none}
-.price-tag{font-family:'Instrument Serif',serif;font-size:88px;line-height:1;margin:16px 0 8px}
-.price-tag sup{font-size:32px;color:var(--ink-2);vertical-align:super}
-.price-once{color:var(--ink-3);font-size:14px;margin-bottom:28px}
-.price-list{text-align:left;margin:24px 0 32px;display:flex;flex-direction:column;gap:10px}
-.price-list li{display:flex;gap:10px;font-size:14px;color:var(--ink-2);list-style:none}
-.price-list li::before{content:"✓";color:var(--red-2);font-weight:800}
+.price-wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;margin-top:60px}
+.price-card{padding:56px 48px;border:1px solid var(--line-2);border-radius:8px;background:linear-gradient(180deg,rgba(225,29,46,.06),transparent 60%);position:relative;overflow:hidden}
+.price-card::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--red-2),transparent)}
+.price-tag{font-family:'Instrument Serif',serif;font-size:120px;line-height:1;margin:24px 0 8px}
+.price-tag sup{font-size:36px;color:var(--ink-2);vertical-align:super}
+.price-once{color:var(--ink-3);font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:36px}
+.price-list{margin:32px 0 36px;display:flex;flex-direction:column;gap:14px}
+.price-list li{display:flex;gap:14px;font-size:15px;color:var(--ink-2);list-style:none;align-items:center}
+.price-list li::before{content:"";width:18px;height:1px;background:var(--red-2);flex-shrink:0}
 
 /* FAQ */
-.faq{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:10px}
-.faq-item{border:1px solid var(--line);border-radius:14px;background:var(--bg-2);overflow:hidden;transition:border-color .2s}
-.faq-item.open{border-color:var(--line-2)}
-.faq-q{width:100%;padding:20px 24px;text-align:left;background:none;border:0;color:inherit;font-family:inherit;font-size:16px;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px}
-.faq-q::after{content:"+";font-size:24px;color:var(--ink-3);transition:transform .2s}
-.faq-item.open .faq-q::after{transform:rotate(45deg)}
-.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease;padding:0 24px;color:var(--ink-2);font-size:15px;line-height:1.6}
-.faq-item.open .faq-a{max-height:300px;padding:0 24px 20px}
+.faq{margin-top:60px;border-top:1px solid var(--line)}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-q{width:100%;padding:32px 0;text-align:left;background:none;border:0;color:inherit;font-family:'Instrument Serif',serif;font-size:26px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:32px;letter-spacing:-.01em;transition:color .2s}
+.faq-q:hover{color:var(--red-2)}
+.faq-q::after{content:"+";font-size:32px;color:var(--ink-3);transition:transform .3s,color .2s;font-family:'Inter',sans-serif;font-weight:300}
+.faq-item.open .faq-q::after{transform:rotate(45deg);color:var(--red-2)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s;color:var(--ink-2);font-size:15px;line-height:1.7;max-width:680px}
+.faq-item.open .faq-a{max-height:300px;padding:0 0 32px}
 
-/* FINAL CTA */
-.final{text-align:center;padding:100px 0}
-.final h2{margin-bottom:24px}
-.final .sub{margin-bottom:36px}
+/* FINAL */
+.final{text-align:center;padding:160px 0;border-top:1px solid var(--line)}
+.final h2{margin:0 auto 28px}
+.final .sub{margin:0 auto 40px}
 
 /* FOOTER */
-footer{border-top:1px solid var(--line);padding:40px 0;text-align:center;color:var(--ink-3);font-size:13px}
-footer a{margin:0 12px;transition:color .2s}
+footer{border-top:1px solid var(--line);padding:48px 0;color:var(--ink-3);font-size:13px}
+footer .f-row{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px}
+footer a{margin:0 14px;transition:color .2s}
 footer a:hover{color:var(--ink)}
 
-@media(max-width:640px){
-  section{padding:64px 0}
-  .price-card{padding:36px 24px}
-  .price-tag{font-size:72px}
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:40px}
+  .hero-visual{order:-1;max-width:340px;margin:0 auto}
+  .mods,.phases-wrap{grid-template-columns:1fr}
+  .price-wrap{grid-template-columns:1fr;gap:40px}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .stat:nth-child(2){border-right:0}
+  .stat:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  section{padding:80px 0}
+  .quote,.final{padding:100px 0}
+  .stat-num{font-size:48px}
+  .price-tag{font-size:88px}
 }
 
-.rv{opacity:0;transform:translateY(20px);transition:opacity .6s,transform .6s}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
 .rv.in{opacity:1;transform:none}
 </style>
 </head>
@@ -133,104 +161,131 @@ footer a:hover{color:var(--ink)}
 
 <nav class="nav">
   <div class="nav-inner">
-    <div class="logo">EVRY<span>Ø</span>NE</div>
-    <a href="https://evryoneclub.com/products/evryone-le-codex/" class="nav-cta">Obtenir le Codex</a>
+    <div class="brand">EVRYØNE</div>
+    <a href="https://evryoneclub.com/products/evryone-le-codex/" class="nav-cta">Obtenir le Codex →</a>
   </div>
 </nav>
 
 <header class="hero">
-  <div class="wrap hero-inner">
-    <div class="eyebrow"><span class="dot"></span>Guide PDF · 100 pages</div>
-    <h1>30 jours pour <em>devenir<br>la version forgée</em> de toi.</h1>
-    <p class="lede">Le Codex EVRYØNE. 4 phases, 7 dimensions, 21 recettes, 14 chapitres. Un protocole complet pour reconstruire ton corps, ton mental et ta discipline.</p>
-    <div class="cta-row">
-      <a href="https://evryoneclub.com/products/evryone-le-codex/" class="btn-buy">Obtenir Le Codex — 19,90€ →</a>
-      <a href="#contenu" class="btn-ghost">Voir le contenu</a>
+  <div class="wrap hero-grid">
+    <div>
+      <div class="tag"><span class="dot"></span>Nouveau · Guide PDF · 100 pages</div>
+      <h1 class="hero-title">
+        <span class="l">30 jours</span>
+        <span class="l italic serif" style="background:linear-gradient(135deg,#fff,var(--red-2));-webkit-background-clip:text;background-clip:text;color:transparent">pour te</span>
+        <span class="l italic serif" style="background:linear-gradient(135deg,var(--red-2),var(--red));-webkit-background-clip:text;background-clip:text;color:transparent">forger.</span>
+      </h1>
+      <p class="lede">Le protocole complet. 4 phases, 7 dimensions, 21 recettes, 14 chapitres. Tout ce qu'il faut pour reconstruire ton corps, ton mental et ta discipline. Rien de plus.</p>
+      <div class="cta-row">
+        <a href="https://evryoneclub.com/products/evryone-le-codex/" class="btn-buy">Obtenir Le Codex — 19,90€ →</a>
+        <a href="#contenu" class="btn-ghost">Voir le contenu</a>
+      </div>
+      <div class="hero-meta">
+        <span><span class="check">✓</span> Téléchargement immédiat</span>
+        <span><span class="check">✓</span> Accès à vie</span>
+      </div>
     </div>
-    <div class="hero-meta">
-      <span><b>100</b> pages</span>
-      <span><b>4</b> phases</span>
-      <span><b>21</b> recettes</span>
-      <span><b>Accès</b> immédiat</span>
+    <div class="hero-visual">
+      <div class="book">
+        <div class="book-top">EVRYØNE · Codex</div>
+        <div class="book-title">Le<br>Protocole<em>30 jours.</em></div>
+        <div class="book-bot">
+          <div>Édition<br>I — 2026</div>
+          <div style="text-align:right"><b>100</b>pages</div>
+        </div>
+      </div>
     </div>
   </div>
 </header>
 
+<section class="stats" style="padding:60px 0">
+  <div class="wrap">
+    <div class="stats-grid">
+      <div class="stat"><div class="stat-num">100</div><div class="stat-lbl">Pages</div></div>
+      <div class="stat"><div class="stat-num">04</div><div class="stat-lbl">Phases</div></div>
+      <div class="stat"><div class="stat-num">14</div><div class="stat-lbl">Chapitres</div></div>
+      <div class="stat"><div class="stat-num">21</div><div class="stat-lbl">Recettes</div></div>
+    </div>
+  </div>
+</section>
+
 <section id="contenu">
   <div class="wrap">
-    <div class="section-head rv">
-      <div class="kicker">Ce que tu reçois</div>
-      <h2>7 dimensions. Un protocole.</h2>
-      <p class="sub">Pas un guide d'entraînement de plus. Un système complet qui structure chaque levier de ta transformation.</p>
+    <div class="rv">
+      <div class="eyebrow">Le contenu</div>
+      <h2>Sept dimensions. <em>Un protocole.</em></h2>
+      <p class="sub">Pas un guide d'entraînement de plus. Un système qui structure chaque levier de ta transformation, de la salle à ton mental.</p>
     </div>
-    <div class="dim-grid">
-      <div class="dim rv"><div class="dim-num">01</div><div class="dim-title">Training</div><div class="dim-desc">Programmation PPL & Full body, progression, intensité.</div></div>
-      <div class="dim rv"><div class="dim-num">02</div><div class="dim-title">Nutrition</div><div class="dim-desc">21 recettes, macros, listes de courses, timing.</div></div>
-      <div class="dim rv"><div class="dim-num">03</div><div class="dim-title">Récupération</div><div class="dim-desc">Sommeil, mobilité, deload, gestion de la fatigue.</div></div>
-      <div class="dim rv"><div class="dim-num">04</div><div class="dim-title">Discipline</div><div class="dim-desc">Routines, rituels, habitudes ancrées en 30 jours.</div></div>
-      <div class="dim rv"><div class="dim-num">05</div><div class="dim-title">Mental</div><div class="dim-desc">Focus, gestion de l'échec, mindset de progression.</div></div>
-      <div class="dim rv"><div class="dim-num">06</div><div class="dim-title">Charisme</div><div class="dim-desc">Posture, présence, communication, image de soi.</div></div>
-      <div class="dim rv"><div class="dim-num">07</div><div class="dim-title">Trackers</div><div class="dim-desc">Outils de suivi quotidien et hebdomadaire imprimables.</div></div>
+    <div class="mods">
+      <div class="mod rv"><span class="mod-num">— 01</span><div class="mod-title">Training</div><div class="mod-desc">Programmation PPL & Full body, progression structurée, intensité, RPE et 1RM.</div></div>
+      <div class="mod rv"><span class="mod-num">— 02</span><div class="mod-title">Nutrition</div><div class="mod-desc">21 recettes complètes, calculs de macros, listes de courses, timing des repas.</div></div>
+      <div class="mod rv"><span class="mod-num">— 03</span><div class="mod-title">Récupération</div><div class="mod-desc">Sommeil, mobilité, deload programmé, gestion de la fatigue cumulative.</div></div>
+      <div class="mod rv"><span class="mod-num">— 04</span><div class="mod-title">Discipline</div><div class="mod-desc">Routines matinales, rituels du soir, ancrage d'habitudes en 30 jours.</div></div>
+      <div class="mod rv"><span class="mod-num">— 05</span><div class="mod-title">Mental</div><div class="mod-desc">Focus, gestion de l'échec, mindset de progression, dialogue interne.</div></div>
+      <div class="mod rv"><span class="mod-num">— 06</span><div class="mod-title">Charisme</div><div class="mod-desc">Posture, présence physique, communication, image de soi.</div></div>
+      <div class="mod rv" style="grid-column:span 2"><span class="mod-num">— 07</span><div class="mod-title">Trackers imprimables</div><div class="mod-desc">Outils de suivi quotidien et hebdomadaire. Imprime, accroche au mur, exécute.</div></div>
     </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <div class="section-head rv">
-      <div class="kicker">La structure</div>
-      <h2>4 phases. 30 jours.</h2>
+    <div class="rv">
+      <div class="eyebrow">La structure</div>
+      <h2>Quatre phases. <em>Trente jours.</em></h2>
       <p class="sub">Une montée en puissance progressive. Chaque phase déverrouille la suivante.</p>
     </div>
-    <div class="phases">
-      <div class="phase rv"><div class="phase-day">Jours 1–7</div><div class="phase-name">Reset</div><div class="phase-desc">Audit complet, base de données personnelle, routines de fondation.</div></div>
-      <div class="phase rv"><div class="phase-day">Jours 8–15</div><div class="phase-name">Build</div><div class="phase-desc">Construction physique, montée en volume, ancrage des habitudes.</div></div>
-      <div class="phase rv"><div class="phase-day">Jours 16–23</div><div class="phase-name">Ascend</div><div class="phase-desc">Intensification, dépassement, optimisation des performances.</div></div>
-      <div class="phase rv"><div class="phase-day">Jours 24–30</div><div class="phase-name">Lock</div><div class="phase-desc">Verrouillage des acquis, plan post-30 jours, identité forgée.</div></div>
+    <div class="phases-wrap">
+      <div class="phase rv"><div class="phase-day">Jours 01 — 07</div><div class="phase-num">I</div><div class="phase-name">Reset</div><div class="phase-desc">Audit complet, base de données personnelle, routines de fondation.</div></div>
+      <div class="phase rv"><div class="phase-day">Jours 08 — 15</div><div class="phase-num">II</div><div class="phase-name">Build</div><div class="phase-desc">Construction physique, montée en volume, ancrage des habitudes.</div></div>
+      <div class="phase rv"><div class="phase-day">Jours 16 — 23</div><div class="phase-num">III</div><div class="phase-name">Ascend</div><div class="phase-desc">Intensification, dépassement, optimisation des performances.</div></div>
+      <div class="phase rv"><div class="phase-day">Jours 24 — 30</div><div class="phase-num">IV</div><div class="phase-name">Lock</div><div class="phase-desc">Verrouillage des acquis, plan post-30 jours, identité forgée.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="quote">
+  <div class="wrap">
+    <p class="quote-text rv">La motivation est morte.<br>Ce qui reste, <em>c'est l'exécution.</em></p>
+    <div class="quote-by rv">— Evryøne, 2026</div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="rv">
+      <div class="eyebrow">Tarif</div>
+      <h2>Un paiement. <em>Accès à vie.</em></h2>
+    </div>
+    <div class="price-wrap">
+      <div class="rv">
+        <p class="sub" style="font-size:18px;margin-bottom:24px">Pas d'abonnement. Pas de paywall caché. Pas de bonus à débloquer plus tard. Tu télécharges, tu exécutes, c'est à toi.</p>
+        <p style="color:var(--ink-3);font-size:14px;line-height:1.7">Format PDF haute définition, optimisé pour mobile, tablette et desktop. Mises à jour gratuites à vie.</p>
+      </div>
+      <div class="price-card rv">
+        <div style="font-family:'Instrument Serif',serif;font-size:14px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3)">EVRYØNE — Le Codex</div>
+        <div class="price-tag grad-red">19<sup>,90€</sup></div>
+        <div class="price-once">Paiement unique</div>
+        <ul class="price-list">
+          <li>PDF 100 pages structurées</li>
+          <li>4 phases · 14 chapitres · 21 recettes</li>
+          <li>Trackers imprimables inclus</li>
+          <li>Mises à jour gratuites à vie</li>
+        </ul>
+        <a href="https://evryoneclub.com/products/evryone-le-codex/" class="btn-buy" style="width:100%;justify-content:center">Obtenir Le Codex →</a>
+      </div>
     </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <div class="proof">
-      <div class="proof-item rv"><div class="proof-num">100</div><div class="proof-lbl">pages structurées</div></div>
-      <div class="proof-item rv"><div class="proof-num">14</div><div class="proof-lbl">chapitres</div></div>
-      <div class="proof-item rv"><div class="proof-num">21</div><div class="proof-lbl">recettes</div></div>
-      <div class="proof-item rv"><div class="proof-num">30</div><div class="proof-lbl">jours d'exécution</div></div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="section-head rv">
-      <div class="kicker">Tarif</div>
-      <h2>Un paiement. Accès à vie.</h2>
-    </div>
-    <div class="price-card rv">
-      <div style="font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3)">EVRYØNE — Le Codex</div>
-      <div class="price-tag">19<sup>,90€</sup></div>
-      <div class="price-once">Paiement unique · Téléchargement immédiat</div>
-      <ul class="price-list">
-        <li>PDF 100 pages, optimisé mobile & desktop</li>
-        <li>4 phases · 14 chapitres · 21 recettes</li>
-        <li>Trackers imprimables inclus</li>
-        <li>Mises à jour gratuites à vie</li>
-      </ul>
-      <a href="https://evryoneclub.com/products/evryone-le-codex/" class="btn-buy" style="width:100%;justify-content:center">Obtenir Le Codex →</a>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="section-head rv">
-      <div class="kicker">FAQ</div>
-      <h2>Les questions fréquentes.</h2>
+    <div class="rv">
+      <div class="eyebrow">FAQ</div>
+      <h2>Les questions <em>fréquentes.</em></h2>
     </div>
     <div class="faq">
-      <div class="faq-item"><button class="faq-q">Sous quel format je reçois le guide ?</button><div class="faq-a">Un PDF de 100 pages, lisible sur mobile, tablette et desktop. Téléchargement immédiat après paiement.</div></div>
+      <div class="faq-item"><button class="faq-q">Sous quel format je reçois le guide ?<span></span></button><div class="faq-a">Un PDF de 100 pages, lisible sur mobile, tablette et desktop. Téléchargement immédiat après paiement.</div></div>
       <div class="faq-item"><button class="faq-q">Combien de temps j'ai accès ?</button><div class="faq-a">À vie. Le PDF est à toi, et tu reçois toutes les futures mises à jour gratuitement.</div></div>
       <div class="faq-item"><button class="faq-q">Pour qui c'est fait ?</button><div class="faq-a">Pour toute personne qui veut un protocole complet et structuré sur 30 jours — débutant motivé ou intermédiaire qui veut systématiser sa progression.</div></div>
       <div class="faq-item"><button class="faq-q">Faut-il du matériel ?</button><div class="faq-a">Le Codex propose des programmes salle (PPL/Full body) et des alternatives au poids du corps. Tu adaptes selon ton setup.</div></div>
@@ -241,21 +296,23 @@ footer a:hover{color:var(--ink)}
 
 <section class="final">
   <div class="wrap">
-    <h2 class="serif rv">30 jours.<br>Une seule décision.</h2>
-    <p class="sub rv">Tu peux scroller encore, ou commencer maintenant.</p>
+    <h2 class="rv" style="margin:0 auto 28px">30 jours.<br><em>Une décision.</em></h2>
+    <p class="sub rv" style="margin:0 auto 40px">Tu peux scroller encore. Ou commencer maintenant.</p>
     <a href="https://evryoneclub.com/products/evryone-le-codex/" class="btn-buy rv">Obtenir Le Codex — 19,90€ →</a>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <div class="logo" style="margin-bottom:16px">EVRY<span style="color:var(--red-2)">Ø</span>NE</div>
-    <div>
-      <a href="/cgu">CGU</a>·
-      <a href="/privacy">Confidentialité</a>·
-      <a href="mailto:contact@evryoneclub.com">Contact</a>
+    <div class="f-row">
+      <div class="brand">EVRYØNE</div>
+      <div>
+        <a href="https://evryoneclub.com">Boutique</a>·
+        <a href="https://app.evryoneclub.com">App</a>·
+        <a href="mailto:contact@evryoneclub.com">Contact</a>
+      </div>
+      <div>© 2026 EVRYØNE</div>
     </div>
-    <div style="margin-top:16px">© 2026 EVRYØNE — Tous droits réservés.</div>
   </div>
 </footer>
 
@@ -273,6 +330,5 @@ document.querySelectorAll('.faq-q').forEach(btn => {
   });
 });
 </script>
-
 </body>
 </html>
